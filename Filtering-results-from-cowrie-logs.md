@@ -16,7 +16,6 @@ See the Python 2 script below:
 """
 -Python2 script for iterating through a json log file from a cowrie honeypot.
 -Script will filter by session id and command inputs from attacker IP addresses.
--Be aware that when creating the script there could multiple connections from the same IP address.
 """
 
 import sys
