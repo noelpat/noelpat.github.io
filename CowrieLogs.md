@@ -1,4 +1,4 @@
-# Introduction
+# Filtering results from cowrie log files
 
 After taking a look at some cowrie json logs myself, I wanted to create and share another way to analyze cowrie json logs with a Python script at the command line.
 
