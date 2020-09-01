@@ -1,6 +1,6 @@
 # Filtering results from cowrie log files
 
-After taking a look at some cowrie json logs myself, I wanted to create and share another way to analyze cowrie json logs with a Python script at the command line.
+After reviewing cowrie json logs myself, I wanted to create and share another way to analyze cowrie json logs with a Python script at the command line.
 
 First, what is cowrie?
 > Cowrie is a medium to high interaction SSH and Telnet honeypot designed to log brute force attacks and the shell interaction performed by the attacker. In medium interaction mode (shell) it emulates a UNIX system in Python, in high interaction mode (proxy) it functions as an SSH and telnet proxy to observe attacker behavior to another system.
