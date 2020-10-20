@@ -1,4 +1,4 @@
-# Filtering results from cowrie log files
+# Filtering commands from cowrie log files
 
 After reviewing cowrie json logs myself, I wanted to create and share another way to analyze cowrie json logs with a Python script at the command line.
 
@@ -62,4 +62,6 @@ If you want to send the output to a text file simply add "> output.txt" to the e
 python logScrape.py cowrie.json.log > output.txt
 ```
 
-Relevant reference for more example code: https://zeroaptitude.com/zerodetail/analyzing-cowrie-honeypot-results/
+Relevant references for more example code: 
+https://zeroaptitude.com/zerodetail/analyzing-cowrie-honeypot-results/
+https://github.com/vwefnab/analyze-cowrie-log
