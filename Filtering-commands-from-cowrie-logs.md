@@ -63,5 +63,5 @@ python logScrape.py cowrie.json.log > output.txt
 ```
 
 Relevant references for more example code: 
-https://zeroaptitude.com/zerodetail/analyzing-cowrie-honeypot-results/
-https://github.com/vwefnab/analyze-cowrie-log
+* https://zeroaptitude.com/zerodetail/analyzing-cowrie-honeypot-results/
+* https://github.com/vwefnab/analyze-cowrie-log
