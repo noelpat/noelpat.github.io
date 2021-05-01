@@ -83,7 +83,7 @@ In our case, since we're AD-joined with sssd, we don't need to make changes to P
 ```
 Now we try to start the server as the jupyterhub user:
 ```
-# sudo -u jupyterhub /usr/local/bin/jupyterhub - JupyterHub.spawner_class=sudospawner.SudoSpawner
+# sudo -u jupyterhub /usr/local/bin/jupyterhub --JupyterHub.spawner_class=sudospawner.SudoSpawner
 ```
 Alternatively, you could just switch to the jupyterhub user as root (su jupyterhub) and then remove the "sudo -u jupyterhub" at the start of the above command. If you get an error about permission being denied for an invalid cookie secret file or an attempt to write to a read only database simply shut the server down and delete the jupyterhub_cookie_secret and jupyterhub.sqlite files in the /etc/jupyterhub directory.
 For the next step we want to set JupyterLab as the default/home page when a user logs into jupyterhub. To accomplish, I modified this following section of the jupyterhub_config.py file:
@@ -99,7 +99,7 @@ We will create a unit file to run systemd service as specific user:
 Description=Run service as user jupyteruser
 [Service]
 User=jupyterhub
-ExecStart=/usr/local/bin/jupyterhub - JupyterHub.spawner_class=sudospawner.SudoSpawner
+ExecStart=/usr/local/bin/jupyterhub --JupyterHub.spawner_class=sudospawner.SudoSpawner
 WorkingDirectory=/etc/jupyterhub
 [Install]
 WantedBy=multi-user.target
