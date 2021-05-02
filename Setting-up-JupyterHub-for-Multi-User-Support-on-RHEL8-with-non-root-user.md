@@ -207,7 +207,9 @@ Then I had to make copies of the certificate and key and put them in the directo
 Restarted nginx:
 ```
 # systemctl restart nginx
+```
 Run the firewall command(s) to allow port 80, 443, and 4443:
+```
 # firewall-cmd - add-port=4443/tcp
 # firewall-cmd - add-service={http,https}
 # firewall-cmd - runtime-to-permanent
